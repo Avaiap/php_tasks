@@ -12,7 +12,7 @@ $shoes = new Category();
 
 //Верхняя одежда
 $whiteTShirt = new Product('Белая футболка', 1000, 5, 'Удобная классическая футболка');
-$blackTShirt = new Product('Чёрная футболка', 999, 4, 'Футболка для игры в баскетбол');
+$blackTShirt = new Product('Чёрная футболка', 1000, 5, 'Футболка чёрного цвета');
 
 //Обувь
 $airJordan1 = new Product('Аир Джордан классик', 9990, 5, 'Легендарная модель кроссовок');
@@ -40,4 +40,3 @@ $john->addToBasket($leatherShoes);
 
 //Выводим товары из корзины пользователя на экран
 $bob->printProductsInTheBasketInfo();
-

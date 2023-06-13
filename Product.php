@@ -9,7 +9,7 @@ class Product {
     {
         $this->name = $name;
         $this->prise = $prise;
-        $this->rating = $rating;
+        $this->rating = $rating; 
         $this->description = $description;
     }
 

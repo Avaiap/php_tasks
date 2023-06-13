@@ -11,4 +11,4 @@ class Category {
             echo "Ключ: " . $category . "<br>" . "<br>" . "Товар: " . "<br>" . $product->printInfo();
         }
     }
-}
+} 

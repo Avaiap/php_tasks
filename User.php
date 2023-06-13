@@ -12,7 +12,7 @@ class User{
 
     public function addToBasket(Product $nameProduct){
         $this->basket[] = $nameProduct;
-    }
+    } 
     
     public function printProductsInTheBasketInfo(){
         foreach ($this->basket as $category => $product) {
