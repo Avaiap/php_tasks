@@ -30,13 +30,13 @@ $shoes->printAllProductInfo();
 $bob = new User('Боб', 123456);
 $basketBob = new Basket();
 $john = new User('Джонни', 654321);
-$baskeJohn = new Basket();
+$basketJohn = new Basket();
 
 //Добавляем товары в корзину пользователям
-$$basketBob->addToBasket($blackTShirt);
-$$basketBob->addToBasket($airJordan1);
-$baskeJohn->addToBasket($whiteTShirt);
-$baskeJohn->addToBasket($leatherShoes);
+$basketBob->addToBasket($blackTShirt);
+$basketBob->addToBasket($airJordan1);
+$basketJohn->addToBasket($whiteTShirt);
+$basketJohn->addToBasket($leatherShoes);
 
 //Выводим товары из корзины пользователя на экран
-$$basketBob->printProductsInTheBasketInfo();
+$basketBob->printProductsInTheBasketInfo();
