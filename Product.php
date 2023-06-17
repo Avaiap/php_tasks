@@ -20,3 +20,4 @@ class Product {
             . "Описание: " . $this->description . "<br>";
     }
 }
+
