@@ -1,10 +1,8 @@
 <?php
-//----------------------------------------------------------------------------------------
-//Подключаем файлы
 include 'C:\занятия по php\php\utilits\Product.php';
 include 'C:\занятия по php\php\utilits\Category.php';
 include 'C:\занятия по php\php\utilits\User.php';
-
+include 'C:\занятия по php\php\utilits\Basket.php';
 //----------------------------------------------------------------------------------------
 //Создаём товары и добавляем в категории
 $outerWear = new Category();
@@ -19,24 +17,26 @@ $airJordan1 = new Product('Аир Джордан классик', 9990, 5, 'Ле
 $leatherShoes = new Product('Кожаные туфли', 15990, 5, 'Классические кожаные туфли чёрного цвета из гладкой кожи');
 
 //Добавляем товары в категории
-$outerWear->addToCategory($whiteTShirt);
-$outerWear->addToCategory($blackTShirt);
-$shoes->addToCategory($airJordan1);
-$shoes->addToCategory($leatherShoes);
+$outerWear->add($whiteTShirt);
+$outerWear->add($blackTShirt);
+$shoes->add($airJordan1);
+$shoes->add($leatherShoes);
 
 //Выводим каталог продуктов 
 $outerWear->printAllProductInfo();
 $shoes->printAllProductInfo();
 
-//Создаём новых пользователей
+//Создаём новых пользователей и корзины
 $bob = new User('Боб', 123456);
+$basketBob = new Basket();
 $john = new User('Джонни', 654321);
+$baskeJohn = new Basket();
 
 //Добавляем товары в корзину пользователям
-$bob->addToBasket($blackTShirt);
-$bob->addToBasket($airJordan1);
-$john->addToBasket($whiteTShirt);
-$john->addToBasket($leatherShoes);
+$$basketBob->addToBasket($blackTShirt);
+$$basketBob->addToBasket($airJordan1);
+$baskeJohn->addToBasket($whiteTShirt);
+$baskeJohn->addToBasket($leatherShoes);
 
 //Выводим товары из корзины пользователя на экран
-$bob->printProductsInTheBasketInfo();
+$$basketBob->printProductsInTheBasketInfo();

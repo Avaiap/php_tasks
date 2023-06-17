@@ -1,14 +1,17 @@
 <?php
 class Category {
-    public array $category;
+    /**
+     * @var Categories[]
+     */
+    private array $categories; 
 
-    public function addToCategory(Product $nameProduct){
-        $this->category[] = $nameProduct;
+    public function add(Product $product): void{
+        $this->categories[] = $product;
     }
 
-    public function printAllProductInfo(){
-        foreach ($this->category as $category => $product) {
-            echo "Ключ: " . $category . "<br>" . "<br>" . "Товар: " . "<br>" . $product->printInfo();
+    public function printAllProductInfo(): void {
+        foreach ($this->categories as $categories => $product) {
+            echo "Ключ: " . $categories . "<br>" . "<br>" . "Товар: " . "<br>" . $product->printInfo();
         }
     }
 } 

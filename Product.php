@@ -1,9 +1,9 @@
 <?php
 class Product {
-    public string $name;
-    public int $prise;
-    public float $rating;
-    public string $description;
+    private string $name;
+    private int $prise;
+    private float $rating;
+    private string $description;
 
     public function __construct(string $name, int $prise, float $rating, string $description)
     {
@@ -13,7 +13,7 @@ class Product {
         $this->description = $description;
     }
 
-    public function printInfo(){
+    public function printInfo(): void {
         echo  "Название: " . $this->name . "<br>" 
             . "Цена: " . $this->prise . "<br>" 
             . "Рейтинг: " . $this->rating . "<br>" 
