@@ -5,8 +5,7 @@ class Product {
     private float $rating;
     private string $description;
 
-    public function __construct(string $name, int $prise, float $rating, string $description)
-    {
+    public function __construct(string $name, int $prise, float $rating, string $description) {
         $this->name = $name;
         $this->prise = $prise;
         $this->rating = $rating; 
