@@ -5,7 +5,7 @@ class Category {
      */
     private array $categories; 
 
-    public function add(Product $product): void{
+    public function add(Product $product): void {
         $this->categories[] = $product;
     }
 
