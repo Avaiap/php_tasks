@@ -11,6 +11,7 @@ class User{
     public function setPassword(int $password): void {
         $this->password = $password;
     }
+    
     public function setLogin(string $login): void {
         $this->login = $login;
     }
