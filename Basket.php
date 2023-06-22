@@ -1,8 +1,5 @@
 <?php
 class Basket{
-    /**
-     * @var Basket[]
-     */
     private array $basket;
     private string $userName;
 
@@ -12,7 +9,7 @@ class Basket{
 
     public function printProductsInTheBasketInfo(): void {
         foreach ($this->basket as $category => $product) {
-            echo "Ключ: " . $category . "<br>" . "<br>" . "Товар: " . "<br>" . $product->printInfo() . "<br>";
+            echo "Ключ: " . $category . "<br>" . "<br>" . $product->printInfo() . "<br>";
             echo "Корзина пользователя : $this->userName" . "<br>";
         }
     }
