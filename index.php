@@ -28,9 +28,9 @@ $shoes->printAllProductInfo();
 
 //Создаём новых пользователей и корзины
 $bob = new User('Боб', 123456);
-$basketBob = new Basket();
+$basketBob = new Basket('Bob');
 $john = new User('Джонни', 654321);
-$basketJohn = new Basket();
+$basketJohn = new Basket('John');
 
 //Добавляем товары в корзину пользователям
 $basketBob->addToBasket($blackTShirt);
