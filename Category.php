@@ -11,7 +11,7 @@ class Category {
 
     public function printAllProductInfo(): void {
         foreach ($this->categories as $categories => $product) {
-            echo "Ключ: " . $categories . "<br>" . "<br>" . "Товар: " . "<br>" . $product->printInfo();
+            echo "Ключ: " . $categories . "<br>" . "<br>" . $product->printInfo();
         }
     }
 } 
