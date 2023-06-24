@@ -13,6 +13,7 @@ class Product {
     }
 
     public function printInfo(): void {
+        echo "Товар: " . "<br>";
         echo  "Название: " . $this->name . "<br>" 
             . "Цена: " . $this->prise . "<br>" 
             . "Рейтинг: " . $this->rating . "<br>" 
