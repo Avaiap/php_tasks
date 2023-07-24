@@ -1,3 +1,10 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>PHP tasks</title>
+    </head>
+    <body>
 <?php
 include 'C:\занятия по php\php\utilits\Product.php';
 include 'C:\занятия по php\php\utilits\Category.php';
@@ -40,3 +47,6 @@ $basketJohn->addToBasket($leatherShoes);
 
 //Выводим товары из корзины пользователя на экран
 $basketBob->printProductsInTheBasketInfo();
+?>
+    </body>
+</html>
